@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		771AAA56225A17F100CD100E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAA55225A17F100CD100E /* AppDelegate.swift */; };
-		771AAA58225A17F100CD100E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAA57225A17F100CD100E /* ViewController.swift */; };
 		771AAA5B225A17F100CD100E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA59225A17F100CD100E /* Main.storyboard */; };
 		771AAA5D225A17F200CD100E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA5C225A17F200CD100E /* Assets.xcassets */; };
 		771AAA60225A17F200CD100E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA5E225A17F200CD100E /* LaunchScreen.storyboard */; };
 		771AAA6B225A17F200CD100E /* EmptyTabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAA6A225A17F200CD100E /* EmptyTabsTests.swift */; };
 		771AAA76225A17F200CD100E /* EmptyTabsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAA75225A17F200CD100E /* EmptyTabsUITests.swift */; };
+		771AAA84225A1B1100CD100E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAA83225A1B1100CD100E /* FeedViewController.swift */; };
+		771AAA86225A1B1F00CD100E /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAA85225A1B1F00CD100E /* InboxViewController.swift */; };
+		771AAA89225A1B6B00CD100E /* EmptyTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771AAA88225A1B6B00CD100E /* EmptyTab.storyboard */; };
+		771AAA8B225A1B9700CD100E /* EmptyTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771AAA8A225A1B9700CD100E /* EmptyTabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		771AAA52225A17F100CD100E /* EmptyTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmptyTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		771AAA55225A17F100CD100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		771AAA57225A17F100CD100E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		771AAA5A225A17F100CD100E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		771AAA5C225A17F200CD100E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		771AAA5F225A17F200CD100E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		771AAA71225A17F200CD100E /* EmptyTabsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmptyTabsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		771AAA75225A17F200CD100E /* EmptyTabsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTabsUITests.swift; sourceTree = "<group>"; };
 		771AAA77225A17F200CD100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		771AAA83225A1B1100CD100E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		771AAA85225A1B1F00CD100E /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		771AAA88225A1B6B00CD100E /* EmptyTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmptyTab.storyboard; sourceTree = "<group>"; };
+		771AAA8A225A1B9700CD100E /* EmptyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				771AAA55225A17F100CD100E /* AppDelegate.swift */,
-				771AAA57225A17F100CD100E /* ViewController.swift */,
+				771AAA83225A1B1100CD100E /* FeedViewController.swift */,
+				771AAA85225A1B1F00CD100E /* InboxViewController.swift */,
+				771AAA87225A1B4A00CD100E /* EmptyTabView */,
 				771AAA59225A17F100CD100E /* Main.storyboard */,
 				771AAA5C225A17F200CD100E /* Assets.xcassets */,
 				771AAA5E225A17F200CD100E /* LaunchScreen.storyboard */,
@@ -123,6 +131,15 @@
 				771AAA77225A17F200CD100E /* Info.plist */,
 			);
 			path = EmptyTabsUITests;
+			sourceTree = "<group>";
+		};
+		771AAA87225A1B4A00CD100E /* EmptyTabView */ = {
+			isa = PBXGroup;
+			children = (
+				771AAA88225A1B6B00CD100E /* EmptyTab.storyboard */,
+				771AAA8A225A1B9700CD100E /* EmptyTabViewController.swift */,
+			);
+			path = EmptyTabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				771AAA89225A1B6B00CD100E /* EmptyTab.storyboard in Resources */,
 				771AAA60225A17F200CD100E /* LaunchScreen.storyboard in Resources */,
 				771AAA5D225A17F200CD100E /* Assets.xcassets in Resources */,
 				771AAA5B225A17F100CD100E /* Main.storyboard in Resources */,
@@ -256,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				771AAA58225A17F100CD100E /* ViewController.swift in Sources */,
+				771AAA8B225A1B9700CD100E /* EmptyTabViewController.swift in Sources */,
+				771AAA84225A1B1100CD100E /* FeedViewController.swift in Sources */,
 				771AAA56225A17F100CD100E /* AppDelegate.swift in Sources */,
+				771AAA86225A1B1F00CD100E /* InboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
